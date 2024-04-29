@@ -6,10 +6,14 @@
     <title>乔儿课表</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="init()">
     <div id="content">
+        <div class="wx-alert">
+            <p class="wx-hint">请点击<span class="wx-menu">···</span>，在🌍默认浏览器中打开 ⬆️</p>
+            <p class="wx-error">🔞本页面不支持微信浏览器🔞</p>        
+        </div>
         <div class="unlock">
-            ❤️<input type="password" id="password" placeholder="爱情密码" size="8">
+            ❤️<input type="password" id="password" inputmode="numeric" placeholder="爱情密码" size="8">
             <button onclick="unlock()">🔑 解锁</button><br>
             <span class="prompt">输入密码解锁课表</span>
         </div>
@@ -75,16 +79,23 @@
             return;
         }
     }
-    let passwordInput = document.getElementById("password");
-    passwordInput.focus();
-    passwordInput.addEventListener("keyup", function(event) {
-        console.debug("key:", event.keyCode);
-        if (event.keyCode === 13) {
-            console.debug("enter key pressed");
-            event.preventDefault();
-            unlock();
+    function init() {
+        if (navigator.userAgent.toLowerCase().indexOf('micromessenger') > -1) {
+            document.querySelector(".wx-alert").style.display = "block";
         }
-    });
+        else {
+            document.querySelector(".unlock").style.display = "block";
+            let passwordInput = document.getElementById("password");
+            passwordInput.focus();
+            passwordInput.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                    console.debug("enter key pressed");
+                    event.preventDefault();
+                    unlock();
+                }
+            });
+        }
+    }
     </script>
 </body>
 </html>
