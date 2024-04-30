@@ -81,7 +81,7 @@
         }
     }
     function init() {
-        if (navigator.userAgent.toLowerCase().indexOf('micromessenger') === -1) {
+        if (navigator.userAgent.toLowerCase().indexOf('micromessenger') > -1) {
             document.querySelector(".wx-alert").style.display = "block";
         }
         else {
