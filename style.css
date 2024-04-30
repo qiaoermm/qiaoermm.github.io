@@ -42,8 +42,8 @@ p { margin: 0.2rem; }
 }
 .row {
     display: flex;
+    margin-top: 0.5rem;
     flex-direction: row;
-    vertical-align: middle;
 }
 .course {
     width: 100%;
@@ -87,29 +87,29 @@ p { margin: 0.2rem; }
     padding: 0.5rem 0.5rem;
     text-align: left;
     box-shadow: 0.2rem 0.2rem 0.2rem #888888;
-    .feature {
-        border-color: violet;
-        background-color: lavender;
-    }
-    .service {
-        border-color: orange;
-        background-color: blanchedalmond;
-    }
-    .fee {
-        border-color: blue;
-        background-color: lightskyblue;
-    }
-    .fee table {
-        margin-left: 1rem;
-    }
-    .note {
-        border-color: darkgreen;
-        background-color: lightgreen;
-    }
-    .alert {
-        border-color: crimson;
-        background-color: lightpink;
-    }
+}
+.text.feature {
+    border-color: violet;
+    background-color: lavender;
+}
+.text.service {
+    border-color: orange;
+    background-color: blanchedalmond;
+}
+.text.fee {
+    border-color: blue;
+    background-color: lightskyblue;
+}
+.text.fee table {
+    margin-left: 1rem;
+}
+.text.note {
+    border-color: darkgreen;
+    background-color: lightgreen;
+}
+.text.alert {
+    border-color: crimson;
+    background-color: lightpink;
 }
 ul {
     list-style: none;
@@ -121,25 +121,25 @@ ul {
         text-indent: -0.7rem;
         display: inline-block;
     }
-    .service-list {
-    }
-    .feature-list {
-        text-align: center;
-    }
-    .taboo-list {
-        li::before {
-            font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-            content: "🈲";
-        }
-    }
-    .stop-list {
-        li::before {
-            font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-            content: "🚫";
-        }
+}
+ul.service-list {
+}
+ul.feature-list {
+    text-align: center;
+}
+ul.taboo-list {
+    li::before {
+        font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        content: "🈲";
     }
 }
-.unlock {
+ul.stop-list {
+    li::before {
+        font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        content: "🚫";
+    }
+}
+ul.unlock {
     margin: 8rem auto 0 auto;
     text-align: center;
 
