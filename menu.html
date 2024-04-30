@@ -88,6 +88,7 @@
             document.querySelector(".unlock").style.display = "block";
             let passwordInput = document.getElementById("password");
             passwordInput.focus();
+            passwordInput.click();
             passwordInput.addEventListener("keyup", function(event) {
                 if (event.keyCode === 13) {
                     console.debug("enter key pressed");
