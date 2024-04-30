@@ -87,29 +87,29 @@ p { margin: 0.2rem; }
     padding: 0.5rem 0.5rem;
     text-align: left;
     box-shadow: 0.2rem 0.2rem 0.2rem #888888;
-}
-.text.feature {
-    border-color: violet;
-    background-color: lavender;
-}
-.text.service {
-    border-color: orange;
-    background-color: blanchedalmond;
-}
-.text.fee {
-    border-color: blue;
-    background-color: lightskyblue;
-}
-.text.fee table {
-    margin-left: 1rem;
-}
-.text.note {
-    border-color: darkgreen;
-    background-color: lightgreen;
-}
-.text.alert {
-    border-color: crimson;
-    background-color: lightpink;
+    .feature {
+        border-color: violet;
+        background-color: lavender;
+    }
+    .service {
+        border-color: orange;
+        background-color: blanchedalmond;
+    }
+    .fee {
+        border-color: blue;
+        background-color: lightskyblue;
+    }
+    .fee table {
+        margin-left: 1rem;
+    }
+    .note {
+        border-color: darkgreen;
+        background-color: lightgreen;
+    }
+    .alert {
+        border-color: crimson;
+        background-color: lightpink;
+    }
 }
 ul {
     list-style: none;
@@ -121,60 +121,73 @@ ul {
         text-indent: -0.7rem;
         display: inline-block;
     }
-}
-.service-list {
-}
-.feature-list {
-    text-align: center;
-}
-.taboo-list {
-    li::before {
-        font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-        content: "🈲";
+    .service-list {
     }
-}
-.stop-list {
-    li::before {
-        font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-        content: "🚫";
+    .feature-list {
+        text-align: center;
+    }
+    .taboo-list {
+        li::before {
+            font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            content: "🈲";
+        }
+    }
+    .stop-list {
+        li::before {
+            font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            content: "🚫";
+        }
     }
 }
 .unlock {
-    margin: 5rem auto;
+    margin: 8rem auto 0 auto;
     text-align: center;
+
+    font-size: 2rem;
     display: none;
-}
-.unlock input {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid orange;
-}
-.unlock input:focus {
-    border-color: violet;
-}
-.prompt {
-    font-size: 0.8rem;
-    color: #888;
-}
-.prompt.error {
-    color: lightcoral;
+    input {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 2px solid crimson;
+        font-size: 1.5rem;
+    };
+    input:focus {
+        border-color: crimson;
+        box-shadow: 0 0 5px rgba(220, 20, 60, 0.8);
+    };
+    button {
+        padding: 8px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 2px solid crimson;
+        background-color: violet;
+        color: white;
+        font-size: 1.5rem;
+    };
+    .prompt {
+        font-size: 0.8rem;
+        color: #888;
+    };
+    .prompt.error {
+        color: lightcoral;
+    };
 }
 .wx-alert {
     display: none;
-}
-.wx-hint {
-    font-size: 16px;
-    text-align: right;
-    margin-top: 0px;
-    margin-right: 0px;
-}
-.wx-menu {
-    background-color: #333;
-    color: white;
-}
-.wx-error {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 100px;
+    .wx-hint {
+        font-size: 16px;
+        text-align: right;
+        margin-top: 0px;
+        margin-right: 0px;
+    };
+    .wx-menu {
+        background-color: #333;
+        color: white;
+    };
+    .wx-error {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 100px;
+    };
 }

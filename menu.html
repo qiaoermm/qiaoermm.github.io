@@ -13,7 +13,7 @@
             <p class="wx-error">🔞本页面不支持微信浏览器🔞</p>        
         </div>
         <div class="unlock">
-            ❤️<input type="password" id="password" inputmode="numeric" placeholder="爱情密码" size="8">
+            💝<input type="password" id="password" inputmode="numeric" placeholder="爱情密码" size="8">
             <button onclick="unlock()">🔑 解锁</button><br>
             <span class="prompt">输入密码解锁课表</span>
         </div>
@@ -76,6 +76,7 @@
             console.debug(contentNode.innerHTML);
             promptNode.textContent = "密码错误，请重新输入";
             promptNode.classList.add("error");
+            passwordNode.value = "";
             return;
         }
     }
