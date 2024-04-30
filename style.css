@@ -139,7 +139,7 @@ ul.stop-list {
         content: "🚫";
     }
 }
-ul.unlock {
+.unlock {
     margin: 8rem auto 0 auto;
     text-align: center;
 
