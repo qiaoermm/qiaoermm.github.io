@@ -151,7 +151,6 @@ ul.stop-list {
         border-radius: 5px;
         border: 2px solid crimson;
         font-size: 1.5rem;
-        letter-spacing: 0.5rem;
     };
     #password:focus {
         border-color: crimson;
