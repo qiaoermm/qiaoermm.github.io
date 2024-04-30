@@ -145,14 +145,15 @@ ul.stop-list {
 
     font-size: 2rem;
     display: none;
-    input {
+    #password {
         padding: 10px;
         margin: 5px;
         border-radius: 5px;
         border: 2px solid crimson;
         font-size: 1.5rem;
+        letter-spacing: 0.5rem;
     };
-    input:focus {
+    #password:focus {
         border-color: crimson;
         box-shadow: 0 0 5px rgba(220, 20, 60, 0.8);
     };
