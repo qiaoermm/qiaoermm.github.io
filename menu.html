@@ -6,7 +6,7 @@
     <title>乔儿课表</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="init()">
+<body onload="init()" onscroll="playVideo()">
     <div id="content">
         <div class="wx-alert">
             <p class="wx-hint">请点击<span class="wx-menu">···</span>，在🌍默认浏览器中打开 ⬆️</p>
@@ -56,6 +56,7 @@
         return new TextDecoder().decode(decryptedText);
     }
 
+    let videos = [];
     function loadMedia() {
         const media = ['1.webp', '2.webp', '3.webp', '4.webm', '5.webm'];
         let mediaNode = document.getElementById("media");
@@ -69,10 +70,25 @@
                 let video = document.createElement("video");
                 video.src = 'media/' + m;
                 video.controls = true;
-                video.autoplay = true;
+                video.autoplay = false;
                 video.loop = true;
-                video.muted = true;
+                video.volume = 0.3;
                 mediaNode.appendChild(video);
+                videos.push(video);
+            }
+        });
+    }
+
+    const viewportCenterX = window.innerWidth / 2;
+    const viewportCenterY = window.innerHeight / 2;
+    function playVideo() {
+        let e = document.elementFromPoint(viewportCenterX, viewportCenterY);
+        videos.forEach(v => {
+            if (e.isEqualNode(v)) {
+                v.play();
+            }
+            else {
+                v.pause();
             }
         });
     }
