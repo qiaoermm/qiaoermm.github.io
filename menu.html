@@ -18,6 +18,7 @@
             <span class="prompt">输入密码解锁课表</span>
         </div>
     </div>
+    <div id="media"></div>
     <script>
     let iv = new TextEncoder().encode("20240428T142819Z".padEnd(16, ' ').substring(0, 16));
     let encContent = "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";
@@ -55,6 +56,27 @@
         return new TextDecoder().decode(decryptedText);
     }
 
+    function loadMedia() {
+        const media = ['1.webp', '2.webp', '3.webp', '4.webm', '5.webm'];
+        let mediaNode = document.getElementById("media");
+        media.forEach((m, i) => {
+            if (m.endsWith("webp")) {
+                let img = document.createElement("img");
+                img.src = 'media/' + m;
+                mediaNode.appendChild(img);
+            }
+            else if (m.endsWith("webm")) {
+                let video = document.createElement("video");
+                video.src = 'media/' + m;
+                video.controls = true;
+                video.autoplay = true;
+                video.loop = true;
+                video.muted = true;
+                mediaNode.appendChild(video);
+            }
+        });
+    }
+
     async function unlock() {
         let contentNode = document.getElementById("content");
         let promptNode = document.querySelector(".prompt");
@@ -68,8 +90,10 @@
         try {
             let html = await decryptMessage(encContent, password);
             console.debug("decrypted:", html);
-            if (html)
+            if (html) {
                 contentNode.innerHTML = html;
+                loadMedia();
+            }
         }
         catch (e) {
             console.debug("decryption error:", e);

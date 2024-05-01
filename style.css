@@ -57,6 +57,14 @@ p { margin: 0.2rem; }
     text-wrap: nowrap;
     font-family: sans-serif;
 }
+
+#media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
 .heart-box {
     border: 3px solid purple;
     border-radius: 1rem;
