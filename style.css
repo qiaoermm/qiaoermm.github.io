@@ -124,7 +124,7 @@ p.list {
     text-align: center;
     i {
         font-style: normal;
-        padding-left: 1rem;
+        margin: 0 0.5rem;
         display: inline-block;
     }
 }
