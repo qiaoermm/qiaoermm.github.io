@@ -120,30 +120,26 @@ p { margin: 0.2rem; }
     border-color: crimson;
     background-color: lightpink;
 }
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
+p.list {
+    text-align: center;
+    i {
+        font-style: normal;
         padding-left: 1rem;
-        text-indent: -0.7rem;
         display: inline-block;
     }
 }
-ul.service-list {
+p.service-list {
 }
-ul.feature-list {
-    text-align: center;
+p.feature-list {
 }
-ul.taboo-list {
-    li::before {
+p.taboo-list {
+    i::before {
         font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
         content: "🈲";
     }
 }
-ul.stop-list {
-    li::before {
+p.stop-list {
+    i::before {
         font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
         content: "🚫";
     }
