@@ -72,6 +72,7 @@
             else if (m.endsWith("webm")) {
                 let video = document.createElement("video");
                 video.src = 'media/' + m;
+                video.playsInline = true;
                 video.controls = true;
                 video.autoplay = false;
                 video.loop = true;
