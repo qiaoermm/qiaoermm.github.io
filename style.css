@@ -209,10 +209,26 @@ img.qrcode {
     width: 300px;
 }
 
+.avatar {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    background-image: url('media/avatar.webp');
+    background-size: 8rem 8rem;
+    background-repeat: no-repeat;
+    background-position: top left;    
+}
+
 .main {
     text-align: center;
     font-size: 1.5rem;
-    line-height: 2rem;
+
+    .header {
+        background-color: lightyellow;
+    }
+    .name {
+        font-size: 3rem;
+    }
 
     a {
         color: #007bff;
