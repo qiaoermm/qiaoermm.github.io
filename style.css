@@ -128,7 +128,7 @@ p { margin: 0.2rem; }
     border-color: crimson;
     background-color: lightpink;
 }
-p.list {
+.list {
     text-align: center;
     i {
         font-style: normal;
@@ -136,17 +136,17 @@ p.list {
         display: inline-block;
     }
 }
-p.service-list {
+.service-list {
 }
-p.feature-list {
+.feature-list {
 }
-p.taboo-list {
+.taboo-list {
     i::before {
         font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
         content: "🈲";
     }
 }
-p.stop-list {
+.stop-list {
     i::before {
         font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
         content: "🚫";
