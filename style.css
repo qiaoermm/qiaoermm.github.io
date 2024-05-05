@@ -204,3 +204,48 @@ p.stop-list {
         margin-top: 100px;
     };
 }
+
+img.qrcode {
+    width: 300px;
+}
+
+.main {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    a {
+        color: #007bff;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+}
+
+i.wechat-icon {
+    background-image: url('media/wechat-logo.svg');
+    background-size: 1.5rem 1.5rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #7bb32e;
+}
+
+i.yuni-icon {
+    background-image: url('media/yuni-logo.webp');
+    background-size: 1.5rem 1.5rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #7bb32e;
+}
+
+i.tg-icon {
+    background-image: url('media/tg-logo.svg');
+    background-size: 1.5rem 1.5rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #7bb32e;
+}
